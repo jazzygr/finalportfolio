@@ -2,7 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import theme from '../styles/Global'
 
-const SkillsTextContent = () => {
+const SkillsTextContent = props => {
     return(
         <Container>
           <Title>
@@ -13,14 +13,22 @@ const SkillsTextContent = () => {
              <h3>and <span>Skills</span></h3>
           </Title>
           <TextContainer>
+            <div>
             <h5>Project overview</h5>
-            <p>An open</p>
+              <div id="overview"></div>
+              </div>
+              <div>
             <h5>Problems Encountered</h5>
-            <p></p>
+            <div id="problems"></div>
+            </div>
+            <div>
             <h5>Solutions</h5>
-            <p></p>
+            <div id="solutions"></div>
+            </div>
+            <div>
             <h5>Improvements</h5>
-            <p></p>
+            <div id="improvements"></div>
+            </div>
           </TextContainer>
         </Container>
         )
@@ -49,8 +57,14 @@ const SkillsTextContent = () => {
     `
     
     const TextContainer= styled.div`
-      display: grid;
-      grid-template-rows: repeat(3, (1fr, auto));
+    max-height: 100%;
+    display: grid;
+    grid-template-rows: repeat(4,25%);
+      div{
+        display: grid;
+      }
+    margin-right: 10%;
+
       h5{
         margin-left: 5%;
         font-size: 2.5vh;
@@ -61,6 +75,7 @@ const SkillsTextContent = () => {
         font-size: 2.2vh;
         font-weight: 400;
         color: ${theme.gray};
+        line-height: 2.5vh;
       }
     `
     

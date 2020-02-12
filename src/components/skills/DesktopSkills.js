@@ -1,13 +1,13 @@
 import React from 'react';
-import SkillsTextContent from './SkillsTextContent'
 import SkillsCardContent from './SkillsCardContent'
+import SkillsTextContent from "./SkillsTextContent"
 import styled from "styled-components"
 
 const DesktopSkills = () => {
     return (
         <StyledDesktopSkills>
-        <SkillsTextContent />
-        <SkillsCardContent />
+            <SkillsTextContent />
+            <SkillsCardContent />
         </StyledDesktopSkills>
         )
     }
@@ -15,7 +15,7 @@ const DesktopSkills = () => {
     const StyledDesktopSkills = styled.div`
     display: grid;
     margin-right: 3rem;
-    grid-template-columns: auto 60%;
+    grid-template-columns: 40% 60%;
     padding-bottom: 3rem;
     
     .cardContainer {

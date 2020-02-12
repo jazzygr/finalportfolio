@@ -9,9 +9,8 @@ const Button = props => {
     }
     
     const StyledButton = styled.button`
-    min-width: 10rem;
-    height: 8vh;
     border: 2px solid ${theme.secondary};
+    height: 2.5rem;
     border-radius: 5px;
     text-transform: uppercase;
     background: ${theme.secondary};

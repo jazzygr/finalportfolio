@@ -14,27 +14,27 @@ import theme from '../styles/Global'
         <Container>
         <form>
           <p>
-            <label forHTML="name">Name:
+            <label htmlFor="name">Name:
             <input type="text" name="name"></input>
             </label>
           </p>
           <p>
-            <label forHTML="company">Company:
+            <label htmlFor="company">Company:
             <input type="text" name="company"></input>
             </label>
           </p>
           <p>
-            <label forHTML="email">Email Address:
+            <label htmlFor="email">Email Address:
             <input type="email" name="email"></input>
             </label>
           </p>
           <p>
-            <label forHTML="phone">Phone Number:
+            <label htmlFor="phone">Phone Number:
             <input type="text" name="phone" id="phone"></input>
             </label>
           </p>
-          <p class="full">
-            <label forHTML="message">Message:
+          <p className="full">
+            <label htmlFor="message">Message:
             <textarea className="full" name="message" rows="5" id="message"></textarea>
             </label>
           </p>

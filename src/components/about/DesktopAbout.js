@@ -53,10 +53,18 @@ const DesktopAbout = () => {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     .textContainer{
-        display: grid;
-        grid-template-rows: 5.5vh 4vh auto;
+        Button{
+            width: 20%;
+        }
     }
     .aboutText{
+        display: grid;
+        h4{
+            margin-top: 0.5rem;
+            margin-right: 5%;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
         h3{
             color: ${theme.gray};
             font-weight: 400;
@@ -67,11 +75,12 @@ const DesktopAbout = () => {
                 font-size: 5vh;
                 color: ${theme.primary};
             }
-            
         }
         p{
             font-size: 2.2vh;
             padding: 1rem 2rem 1rem 0;
+            font-family: 'montserrat';
+            color: ${theme.gray};
         }
     }
     `
