@@ -1,26 +1,21 @@
 import React from 'react';
 import styled from "styled-components"
-import MobileSkillsCardContent from "./MobileSkillsCardContent"
-import MobileTitle from './MobileTitle';
+import SkillsCardContent from './SkillsCardContent';
+import MobileTitle from "./MobileTitle"
 
-const MobileSkills = () => {
+const MobileSkillsCardContent = () => {
     return (
         <StyledMobileSkills>
             <MobileTitle />
-            <MobileSkillsCardContent />
+            <SkillsCardContent />
         </StyledMobileSkills>
         )
     }
     
     const StyledMobileSkills = styled.div`
-    .cardContainer{
-        width: 80%;
-        margin: 0 auto;
-    }
-    
     @media(min-width: 751px){
         display: none;
     }
     `
-    export default MobileSkills
+    export default MobileSkillsCardContent
     
