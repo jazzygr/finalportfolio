@@ -42,7 +42,7 @@ import theme from '../styles/Global'
             <div data-netlify-recaptcha="true"></div>
           </div>
           <p className="full">
-            <Button text="Submit"/>
+            <Button text="Submit" type="submit"/>
           </p>
         </form>
     </Container>
