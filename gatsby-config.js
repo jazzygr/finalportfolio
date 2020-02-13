@@ -5,6 +5,7 @@ module.exports = {
     author: `@Jeff Graham`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,10 +35,6 @@ module.exports = {
           {
             family: `Montserrat`, 
             variants: [`400`, `600`]
-          },
-          {
-            family: `Oswald`,
-            variants: [`400`, `700`]
           },
         ],
       },

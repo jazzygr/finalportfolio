@@ -1,7 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import Button from '../Button'
+import animateScrollTo from 'animated-scroll-to';
 
  const LandingContent = () => {
     const data = useStaticQuery(graphql`
@@ -15,6 +15,9 @@ import Button from '../Button'
       }
     }
     `)
+    function handleScroll1() {
+      animateScrollTo(document.getElementById('aboutMe'));
+  }
     return (
 
             <div className="container">
@@ -26,8 +29,9 @@ import Button from '../Button'
                     <h1>My name's Jeff</h1>
                     <h2>I build <span>websites.</span></h2>
                     <div className="buttonContainer">
-                        <Button text="About Me" />
-                        <Button text="Get CV" />
+                        <button onClick={handleScroll1}>About Me</button>
+                        <button>View CV</button>
+
                     </div>
                 </div>
 

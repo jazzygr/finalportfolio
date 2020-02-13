@@ -3,16 +3,16 @@ import LandingContent from './LandingContent'
 import styled from "styled-components"
 import theme from "../styles/Global"
 
- const DesktopLanding = () => {
-
+const DesktopLanding = () => {
+    
     return (
-            <StyledDesktopLanding>
-                <LandingContent />
-            </StyledDesktopLanding>
-    )
-}
-
-const StyledDesktopLanding= styled.div`
+        <StyledDesktopLanding>
+        <LandingContent />
+        </StyledDesktopLanding>
+        )
+    }
+    
+    const StyledDesktopLanding= styled.div`
     .container{
         display: grid;
         grid-template-columns: 60% 40%;
@@ -57,18 +57,34 @@ const StyledDesktopLanding= styled.div`
             }
             
             .buttonContainer{
-                    margin-left: 10%;
-                    margin-top: 10vh;
-                    button{
-                        margin-right: 2rem;
+                margin-left: 10%;
+                margin-top: 10vh;
+                button{
+                    border: 2px solid ${theme.secondary};
+                    margin-right: 1rem;
+                    height: 2.5rem;
+                    width: 10rem;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    background: ${theme.secondary};
+                    font-family: 'montserrat';
+                    :hover, :focus{
+                        background:#92bde7;
+                        color:#fff;
+                        outline: 0;
+                        transition: background-color 0.8s ease-out;
+                        cursor: pointer;
                     }
-                }       
+                    
+                }
+            }       
         }
-        }
-
+    }
+    
     @media(max-width:1024px){
         display: none;
     }
-`
-
-export default DesktopLanding
+    `
+    
+    export default DesktopLanding
+    

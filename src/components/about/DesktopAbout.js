@@ -55,6 +55,7 @@ const DesktopAbout = () => {
     .textContainer{
         Button{
             width: 20%;
+            font-family: 'montserrat';
         }
     }
     .aboutText{

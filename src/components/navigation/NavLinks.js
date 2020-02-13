@@ -2,6 +2,7 @@ import React from 'react';
 import styled from "styled-components"
 import Button from '../Button'
 import animateScrollTo from 'animated-scroll-to';
+import theme from '../styles/Global'
 
 const NavLinks = () => {
 
@@ -38,7 +39,9 @@ function handleScroll3() {
             <button onClick={handleScroll3}>Contact</button>
             </li>
             <li>
-                <Button text="Get CV"/>
+                <a href="https://docs.google.com/document/d/1z-YuNpemHMn2twhdsby2OizyXaa9GRV4Yw2FjArlT14/edit?usp=sharing" download>
+                <Button text="View CV"></Button>
+                </a>
             </li>
             </ul>
             
@@ -50,7 +53,7 @@ function handleScroll3() {
         button{
             cursor: pointer;
             border: none;
-            background: none;
+            
             font-family: 'montserrat';
             font-weight: 400;
             text-transform: uppercase;
