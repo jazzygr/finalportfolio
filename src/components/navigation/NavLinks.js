@@ -2,7 +2,6 @@ import React from 'react';
 import styled from "styled-components"
 import Button from '../Button'
 import animateScrollTo from 'animated-scroll-to';
-import theme from '../styles/Global'
 
 const NavLinks = () => {
 
