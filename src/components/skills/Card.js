@@ -67,16 +67,13 @@ const improvements = <div>
   const MobileArticle = styled.div`
   margin: 3rem 0;
     h5{
-      margin-top: 3vh;
+      margin-top: 2rem;
       text-align: center;
-      font-weight: 400;
-      font-size: 2.5vh;
+      font-size: 1.4rem;
     }
     p{
-      font-size: 2vh;
-      font-weight: 400;
-      font-family: 'montserrat';
-      color: gray;
+      font-size: 1rem;
+      color: ${theme.gray};
     }
   
   
@@ -88,14 +85,11 @@ const improvements = <div>
   const StyledCard = styled.div`
   display: grid;
   min-height: 230px;
-  grid-template-rows: 40% 15% auto;
+  grid-template-rows: 40% 10% 35% 15%;
   box-shadow: 0px 3px 6px rgb(20,20,20, 0.16);
   overflow: hidden;
   border: 1px solid ${theme.accent};
-  
   align-items: center;
-
-    
     }
     div{
     margin: 1rem;
@@ -117,7 +111,7 @@ const improvements = <div>
   
   h5{
     padding: 0.5rem;
-    font-size: 2.3vh;
+    font-size: 1rem;
     font-weight: 400;
     border-bottom: 1px solid ${theme.accent};
     text-align: center;
@@ -130,7 +124,7 @@ const improvements = <div>
     display: flex;
     text-align: center;
     padding: .5rem;
-    font-size: 2vh;
+    font-size: 0.8rem;
     color: ${theme.gray};
     
   }

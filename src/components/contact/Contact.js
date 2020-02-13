@@ -11,7 +11,7 @@ const Contact = () => {
       )}
 
       const ContactContainer = styled.div`
-      padding-top: 6vh;
+      padding-top: 6rem;
      
 `
 
