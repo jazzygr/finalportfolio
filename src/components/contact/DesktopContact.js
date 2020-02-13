@@ -37,9 +37,6 @@ const DesktopContact = () => {
     <textarea className="full" name="message" rows="5" id="message"></textarea>
     </label>
     </p>
-    <div className="field">
-    <div data-netlify-recaptcha="true"></div>
-    </div>
     <p className="full">
     <button>Submit</button>
     </p>
