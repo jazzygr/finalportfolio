@@ -1,17 +1,17 @@
 import React from 'react'
 import DesktopContact from "./DesktopContact"
-// import MobileContact from "./MobileContact"
 import styled from "styled-components"
 
 
 const Contact = () => {
     return(
-        <ContactContainer>
+        <ContactContainer id="contact">
             <DesktopContact />
       </ContactContainer>
       )}
 
       const ContactContainer = styled.div`
+      padding-top: 6vh;
      
 `
 

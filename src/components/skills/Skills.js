@@ -6,7 +6,7 @@ import styled from "styled-components"
 const Skills = () => {
 
     return (
-            <StyledSkills>
+            <StyledSkills id="portfolio">
                 <DesktopSkills />
                 <MobileSkills />
             </StyledSkills>
@@ -14,7 +14,7 @@ const Skills = () => {
 }
 
 const StyledSkills= styled.div`
-    margin-top: 10%;
+    padding-top: 12vh;
 `
 
 export default Skills

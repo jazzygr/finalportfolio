@@ -78,6 +78,7 @@ const DesktopAbout = () => {
         }
         p{
             font-size: 2.2vh;
+            line-height: 1.5rem;
             padding: 1rem 2rem 1rem 0;
             font-family: 'montserrat';
             color: ${theme.gray};

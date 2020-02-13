@@ -12,7 +12,7 @@ import theme from '../styles/Global'
                 <div></div>
         </LineContainer>
         <Container>
-        <form>
+        <form action = "POST" data-netlify="true">
           <p>
             <label htmlFor="name">Name:
             <input type="text" name="name"></input>
@@ -38,6 +38,9 @@ import theme from '../styles/Global'
             <textarea className="full" name="message" rows="5" id="message"></textarea>
             </label>
           </p>
+          <div className="field">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
           <p className="full">
             <Button text="Submit"/>
           </p>
@@ -57,6 +60,7 @@ const Container = styled.div`
     padding: 1rem;
     max-width: 90%;
     margin: 0 auto;
+    font-family: 'montserrat';
         form{
             padding: 1rem;
             width: 90%;

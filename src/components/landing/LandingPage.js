@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const LandingPage = () => {
     return(
-        <LandingContainer>
+        <LandingContainer id="landing">
             <DesktopLanding />
             <MobileLanding />
         </LandingContainer>

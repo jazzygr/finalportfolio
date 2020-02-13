@@ -6,14 +6,14 @@ import MobileAbout from './MobileAbout'
 
 const About = () => {
     return(
-        <LandingContainer>
+        <LandingContainer id="aboutMe">
             <DesktopAbout />
             <MobileAbout />
         </LandingContainer>
 )}
 
 const LandingContainer = styled.div`
-
+    padding-top: 12vh;
 `
 
 

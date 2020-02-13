@@ -1,26 +1,41 @@
 import React from 'react';
 import styled from "styled-components"
-import {Link} from 'gatsby'
 import Button from '../Button'
-import theme from "../styles/Global"
+import animateScrollTo from 'animated-scroll-to';
 
 const NavLinks = () => {
+
+function handleScroll() {
+    animateScrollTo(document.getElementById('landing'));
+}
+function handleScroll1() {
+    animateScrollTo(document.getElementById('aboutMe'));
+}
+function handleScroll2() {
+    animateScrollTo(document.getElementById('portfolio'));
+}
+function handleScroll3() {
+    animateScrollTo(document.getElementById('contact'));
+}
+
+
+
     return (
         <MyNavLinks>
             <ul className="nav-links">
             <li>
-            <StyledLink to="/home">Home</StyledLink>
+            <button onClick={handleScroll}>Home</button>
             </li>
             <li>
-            <StyledLink to="/about">About</StyledLink>
-            </li>
-            
-            <li>
-            <StyledLink to="/portfolio">Portfolio</StyledLink>
+            <button onClick={handleScroll1}>About</button>
             </li>
             
             <li>
-            <StyledLink to="/contact">Contact</StyledLink>
+            <button onClick={handleScroll2}>Portfolio</button>
+            </li>
+            
+            <li>
+            <button onClick={handleScroll3}>Contact</button>
             </li>
             <li>
                 <Button text="Get CV"/>
@@ -32,13 +47,22 @@ const NavLinks = () => {
     }
 
     const MyNavLinks= styled.nav`
-    
+        button{
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-family: 'montserrat';
+            font-weight: 400;
+            text-transform: uppercase;
+            :focus{
+                outline: none;
+            }
+            :hover{
+                transition: transform 5s, 0.3s ease-in-out;
+                transform: scale(1.1);
+        }
+    }
     `
-     const StyledLink = styled(Link)`
-     text-decoration: none;
-     text-transform: uppercase;
-     color: ${theme.black};
- `
 
 
 export default NavLinks

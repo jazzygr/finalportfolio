@@ -83,7 +83,7 @@ const SkillsTextContent = props => {
         font-size: 2.2vh;
         font-weight: 400;
         color: ${theme.gray};
-        line-height: 2.5vh;
+        line-height: 1.5rem;
       }
     `
     
