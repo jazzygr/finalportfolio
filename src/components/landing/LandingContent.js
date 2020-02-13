@@ -8,7 +8,7 @@ import animateScrollTo from 'animated-scroll-to';
     query {
       lineDrawingMain: file(relativePath: { eq: "line-drawing-main.png" }) {
         childImageSharp {
-          fluid(maxWidth: 600) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid
           }
         }

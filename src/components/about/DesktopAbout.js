@@ -36,11 +36,9 @@ const DesktopAbout = () => {
         display: grid;
         grid-template-columns: auto 1fr;
         align-items: center;
-        font-size: 4vh;
-        font-weight: 400;
+        font-size: 2rem;
         h2{
             margin-right: 1rem;
-            font-weight: 400;
         }
         div{
             height: 2px;
@@ -52,12 +50,6 @@ const DesktopAbout = () => {
     const StyledDesktopAbout= styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    .textContainer{
-        Button{
-            width: 20%;
-            font-family: 'montserrat';
-        }
-    }
     .aboutText{
         display: grid;
         h4{
@@ -73,15 +65,13 @@ const DesktopAbout = () => {
             
             span{
                 font-weight: 400;
-                font-size: 5vh;
+                font-size: 2rem;
                 color: ${theme.primary};
             }
         }
         p{
-            font-size: 2.2vh;
             line-height: 1.5rem;
             padding: 1rem 2rem 1rem 0;
-            font-family: 'montserrat';
             color: ${theme.gray};
         }
     }

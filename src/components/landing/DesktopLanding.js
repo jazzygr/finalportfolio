@@ -45,8 +45,7 @@ const DesktopLanding = () => {
                 grid-template-columns: 10% auto;
                 align-items: center;
                 h2{
-                    font-size: 10vh;
-                    font-weight: 400;
+                    font-size: 5rem;
                 }
                 div{
                     display: grid;
@@ -58,7 +57,7 @@ const DesktopLanding = () => {
             
             .buttonContainer{
                 margin-left: 10%;
-                margin-top: 10vh;
+                margin-top: 8rem;
                 button{
                     border: 2px solid ${theme.secondary};
                     margin-right: 1rem;
@@ -67,7 +66,6 @@ const DesktopLanding = () => {
                     border-radius: 5px;
                     text-transform: uppercase;
                     background: ${theme.secondary};
-                    font-family: 'montserrat';
                     :hover, :focus{
                         background:#92bde7;
                         color:#fff;

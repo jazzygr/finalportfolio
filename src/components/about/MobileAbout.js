@@ -24,7 +24,7 @@ const MobileAbout = () => {
             text-align: center;
             margin: 5%;
             font-weight: 600;
-            font-size: 2vh;
+            font-size: 1.2rem;
         }
         h3{
             color: ${theme.gray};
@@ -34,24 +34,21 @@ const MobileAbout = () => {
             span{
                 display: block;
                 font-weight: 400;
-                font-size: 5vh;
+                font-size: 2.5rem;
                 color: ${theme.primary};
             }
             
         }
         p{
-            font-size: 2vh;
+            font-size: 1rem;
             padding: 1rem;
-            font-family: 'montserrat';
             margin: 0 2rem 0.5rem 2rem;
             color: ${theme.gray};
         }
         button{
             display: block;
             width: 80%;
-            height: 4vh;
             margin: 0 auto;
-            font-size: 2vh;
         }
     }
     .imageContainer{
@@ -71,10 +68,9 @@ const MobileAbout = () => {
             height: 2px;
         }
         h2{
-            font-weight: 400;
-            font-size:  4vh;
+            font-weight: 600;
+            font-size:  3rem;
             padding: 0 1rem;
-            text-align: center;
         }
     }
     `

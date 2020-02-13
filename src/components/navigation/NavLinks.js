@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from "styled-components"
-import Button from '../Button'
+import theme from "../styles/Global"
 import animateScrollTo from 'animated-scroll-to';
 
 const NavLinks = () => {
@@ -26,6 +26,7 @@ function handleScroll3() {
             <li>
             <button onClick={handleScroll}>Home</button>
             </li>
+            
             <li>
             <button onClick={handleScroll1}>About</button>
             </li>
@@ -38,9 +39,7 @@ function handleScroll3() {
             <button onClick={handleScroll3}>Contact</button>
             </li>
             <li>
-                <a href="https://docs.google.com/document/d/1z-YuNpemHMn2twhdsby2OizyXaa9GRV4Yw2FjArlT14/edit?usp=sharing" download>
-                <Button text="View CV"></Button>
-                </a>
+                <a href="https://docs.google.com/document/d/1z-YuNpemHMn2twhdsby2OizyXaa9GRV4Yw2FjArlT14/edit?usp=sharing" download><button>Get CV</button></a>
             </li>
             </ul>
             
@@ -52,10 +51,8 @@ function handleScroll3() {
         button{
             cursor: pointer;
             border: none;
-            
-            font-family: 'montserrat';
             font-weight: 400;
-            text-transform: uppercase;
+            text-transform: uppercase;            
             :focus{
                 outline: none;
             }

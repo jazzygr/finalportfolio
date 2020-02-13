@@ -57,7 +57,6 @@ const DesktopContact = () => {
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
-  font-family: 'montserrat';
   form{
     padding: 1rem;
     width: 90%;
@@ -84,7 +83,6 @@ const DesktopContact = () => {
     .submitButton{
       border: 2px solid ${theme.secondary};
       height: 2.5rem;
-      width: 100%;
       border-radius: 5px;
       text-transform: uppercase;
       padding: 0;
@@ -112,7 +110,7 @@ const DesktopContact = () => {
   }
   h3{
     font-weight: 400;
-    font-size: 5vh;
+    font-size: 2rem;
   }
   
   `
