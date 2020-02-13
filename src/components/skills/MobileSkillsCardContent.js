@@ -14,7 +14,7 @@ const MobileSkillsCardContent = () => {
     div:first-child{
         margin-bottom: 2rem;
     }
-    @media(min-width: 751px){
+    @media(min-width: 1025px){
         display: none;
     }
     `

@@ -53,13 +53,21 @@ const SkillsTextContent = props => {
     
     const Container = styled.div`
       display: grid;
-      grid-template-rows: auto 85%;
+      grid-template-rows: 15% 85%;
+      @media(max-width:1240px) {
+          grid-template-rows: 8% 85%;
+        }
     `
     
     const TextContainer= styled.div`
     max-height: 100%;
     display: grid;
-    grid-template-rows: repeat(4,25%);
+    grid-template-rows: repeat(4, 25%);
+
+    @media(max-width:1240px) {
+        display: block;
+        }
+
       div{
         display: grid;
       }

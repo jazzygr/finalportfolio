@@ -66,7 +66,7 @@ const StyledDesktopLanding= styled.div`
         }
         }
 
-    @media(max-width:750px){
+    @media(max-width:1024px){
         display: none;
     }
 `

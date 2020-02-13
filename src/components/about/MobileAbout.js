@@ -16,10 +16,16 @@ const MobileAbout = () => {
     }
     
     const StyledMobileAbout= styled.div`
-    @media(min-width:751px){
+    @media(min-width:1025px){
             display: none;
         }
     .aboutText{
+        h4{
+            text-align: center;
+            margin: 5%;
+            font-weight: 600;
+            font-size: 2vh;
+        }
         h3{
             color: ${theme.gray};
             font-weight: 400;
@@ -34,14 +40,18 @@ const MobileAbout = () => {
             
         }
         p{
-            font-size: 2.2vh;
+            font-size: 2vh;
             padding: 1rem;
+            font-family: 'montserrat';
+            margin: 0 2rem 0.5rem 2rem;
+            color: ${theme.gray};
         }
         button{
             display: block;
             width: 80%;
+            height: 4vh;
             margin: 0 auto;
-            font-size: 3vh;
+            font-size: 2vh;
         }
     }
     .imageContainer{
@@ -54,7 +64,6 @@ const MobileAbout = () => {
         grid-template-columns: 1fr auto 1fr;
         align-items: center;
         text-align: center;
-        margin-top: 3rem;
         width: 100%;
         
         div {
@@ -63,7 +72,7 @@ const MobileAbout = () => {
         }
         h2{
             font-weight: 400;
-            font-size: 3.3vh;
+            font-size:  4vh;
             padding: 0 1rem;
             text-align: center;
         }

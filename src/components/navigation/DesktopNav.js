@@ -35,7 +35,7 @@ border-bottom:1px solid rgba(150, 150, 150, 0.2);
                 height: 5vh;
             }
         }
-    @media(max-width: 750px){
+    @media(max-width: 1024px){
             display: none;
     }
 `

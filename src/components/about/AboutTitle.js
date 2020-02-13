@@ -12,7 +12,7 @@ const AboutTitle = () => {
         )
     }
     const MobileAboutLine= styled.div`
-    @media(min-width:960px){
+    @media(min-width:1025px){
             display: none;        
     }
     `

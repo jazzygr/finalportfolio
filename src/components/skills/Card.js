@@ -41,11 +41,13 @@ const improvements = <div>
     <img src={props.imgsrc} alt="Current project" />
     <h5>{props.title}</h5>
     <p>{props.text} </p>
+    <div>
       <ul>
         <li>Live</li>
         <li>Code</li>
-        <li onClick={handleClick}>More</li>
+        <li><button onClick={handleClick} onKeyDown={handleClick}>More</button></li>
       </ul>
+    </div>
     </StyledCard>
 
     
@@ -79,7 +81,7 @@ const improvements = <div>
     }
   
   
-  @media(min-width:750px){
+  @media(min-width:1025px){
     display: none;
   }
   `
@@ -96,7 +98,9 @@ const improvements = <div>
 
     
     }
-  
+    div{
+    margin: 1rem;
+  }
   :hover{
     transition: transform 5s, 0.3s ease-in-out;
     transform: scale(1.1);
@@ -118,6 +122,10 @@ const improvements = <div>
     font-weight: 400;
     border-bottom: 1px solid ${theme.accent};
     text-align: center;
+    @media(max-width:1024px){
+          margin-top: 4rem;
+          height: 3rem;
+        }
   }
   p{
     display: flex;
@@ -130,24 +138,28 @@ const improvements = <div>
   ul{
     display: grid;
     justify-items: center;
+    align-items: center;
     grid-template-columns: repeat(3, 1fr);
-    @media(max-width:750px){
+    @media(max-width:1024px){
         grid-template-columns: repeat(2, 1fr);
         }
     
 
     li{
+      align-items: center;
       :hover{
         transition: transform, 0.3s ease-in-out;
         transform: scale(1.2);
       }
-      margin-bottom: 1rem;
       font-family: "montserrat";
       font-size: 2.2vh;
       list-style: none;
       cursor: pointer;
       :last-child{
-        @media(max-width:750px){
+        button{
+        cursor: pointer;
+      }
+        @media(max-width:1024px){
         display: none;
         }
     }

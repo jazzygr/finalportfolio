@@ -13,14 +13,15 @@ const MobileSkills = () => {
     }
     
     const StyledMobileSkills = styled.div`
+     @media(min-width: 1025px){
+        display: none;
+    }
     .cardContainer{
         width: 80%;
         margin: 0 auto;
     }
     
-    @media(min-width: 751px){
-        display: none;
-    }
+   
     `
     export default MobileSkills
     

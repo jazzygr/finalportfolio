@@ -26,7 +26,7 @@ const DesktopAbout = () => {
             transform: scaleX(-1);
         }
     }
-    @media(max-width:750px){
+    @media(max-width:1024px){
         display: none;
     }
     `

@@ -1,7 +1,6 @@
 import React from 'react';
 import Card from "./Card"
 import MainCard from "./MainCard"
-import styled from "styled-components"
 import img1 from "../../images/portfolio.png"
 import img2 from "../../images/colourgame.png"
 import img3 from "../../images/piano.png"

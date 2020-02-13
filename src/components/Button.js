@@ -11,6 +11,7 @@ const Button = props => {
     const StyledButton = styled.button`
     border: 2px solid ${theme.secondary};
     height: 2.5rem;
+    width: 10rem;
     border-radius: 5px;
     text-transform: uppercase;
     background: ${theme.secondary};

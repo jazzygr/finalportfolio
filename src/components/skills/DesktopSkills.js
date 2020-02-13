@@ -34,19 +34,16 @@ const DesktopSkills = () => {
             }
         }
         
-        @media(max-width:960px) {
+        @media(max-width:1240px) {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(3, 1fr);
         }
         
-        @media(max-width:760px) {
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
-        }
+        
     }
     
     
-    @media(max-width: 750px){
+    @media(max-width: 1024px){
         display: none;
     }
     `

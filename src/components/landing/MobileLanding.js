@@ -13,11 +13,11 @@ import theme from '../styles/Global'
 
 const StyledMobileLanding= styled.div`
     padding-top: 10vh;
-
     .container{
         display: block;
         align-items: center;
         padding-top: 10vh;
+        margin-bottom: 7rem;
         height: 100vh;
         
         .textContainer{
@@ -66,7 +66,7 @@ const StyledMobileLanding= styled.div`
         }
         }
 
-    @media(min-width:751px){
+    @media(min-width: 1025px){
         display: none;
     }
 `
