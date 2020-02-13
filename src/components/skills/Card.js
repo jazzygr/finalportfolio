@@ -2,15 +2,15 @@ import React from "react"
 import ReactDom from 'react-dom'
 import styled from 'styled-components'
 import theme from '../styles/Global'
+import motion from "framer-motion"
 
 
 
 
 const Card = props => {
   function handleClick() {
-  const overview = <div>
+  const overview =
                   <p>{props.overview}</p>
-                  </div>
 
   ReactDom.render(overview, document.getElementById('overview'));
 
