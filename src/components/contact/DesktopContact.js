@@ -12,7 +12,7 @@ import theme from '../styles/Global'
                 <div></div>
         </LineContainer>
         <Container>
-        <form action = "POST" data-netlify="true">
+        <form name="portfolio" data-netlify="true">
           <p>
             <label htmlFor="name">Name:
             <input type="text" name="name"></input>
