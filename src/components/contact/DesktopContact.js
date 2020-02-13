@@ -11,7 +11,8 @@ const DesktopContact = () => {
     <div></div>
     </LineContainer>
     <Container>
-    <form name="portfolio" data-netlify="true">
+    <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="portfolio">
+      <input type="hidden" name="bot-field" />
     <p>
     <label htmlFor="name">Name:
     <input type="text" name="name"></input>
@@ -38,7 +39,7 @@ const DesktopContact = () => {
     </label>
     </p>
     <p className="full">
-    <button>Submit</button>
+      <input type="submit" className="submitButton"/>
     </p>
     </form>
     </Container>
@@ -80,12 +81,13 @@ const DesktopContact = () => {
       padding: 1rem;
       border: 1px solid ${theme.secondary};
     }
-    button{
+    .submitButton{
       border: 2px solid ${theme.secondary};
       height: 2.5rem;
       width: 100%;
       border-radius: 5px;
       text-transform: uppercase;
+      padding: 0;
       background: ${theme.secondary};
       :hover, :focus{
         background:#92bde7;
