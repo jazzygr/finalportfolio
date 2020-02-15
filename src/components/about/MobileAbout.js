@@ -49,11 +49,7 @@ const MobileAbout = () => {
             margin: 0 auto;
         }
     }
-    .imageContainer{
-        :nth-child(2){
-            transform: scaleX(-1);
-        }
-    }
+   
     .lineContainer{
         display: grid;
         grid-template-columns: 1fr auto 1fr;

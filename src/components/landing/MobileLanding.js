@@ -3,71 +3,95 @@ import LandingContent from './LandingContent'
 import styled from "styled-components"
 import theme from '../styles/Global'
 
- const MobileLanding = () => {
+const MobileLanding = () => {
     return (
         <StyledMobileLanding>
-            <LandingContent />
+        <LandingContent />
         </StyledMobileLanding>
-    )
-}
-
-const StyledMobileLanding= styled.div`
+        )
+    }
+    
+    const StyledMobileLanding= styled.div`
+    height: 100vh;
+    .imageContainer{
+        margin: auto 0;
+        :nth-child(2){
+            margin-bottom: 10%;
+            transform: scaleX(-1);
+            margin-right: -10px;
+        }
+    }
     padding-top: 10vh;
     .container{
-        display: block;
-        align-items: center;
-        padding-top: 10vh;
-        margin-bottom: 7rem;
-        height: 100vh;
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        .imageContainer{
+
+:nth-child(2){
+display: grid;
+align-items: center;
+}
+}
+        @media(max-width: 860px){
+            .textContainer{
+                position: relative;
+                z-index: 10;
+            }
+            display: block;
+            position: relative;
+            .imageContainer{
+
+                :nth-child(2){
+                    position: absolute;
+                    width: 100%;
+                    left: -5%;
+                    top: 0;
+                    right: 5%;
+                    z-index: 1;
+                    opacity: 0.3;
+                }
+            }       
+        }
         .textContainer{
-            display: grid;
-            align-items: center;
-            grid-template-rows: repeat(3, 1fr);
-            height: 25%;
+            margin-top: 20%;
+            display: block;
+            text-align: center;
             h1:nth-child(2){
-                font-size: 4vh;
-                margin-left: 15%;
+                font-size: 5vh;
                 font-weight: 400;
+                margin-bottom: 5rem;
                 color: ${theme.gray};
             }
             h2:nth-child(3){
-                font-size: 4vh;
-                margin-left: 25%;
-                font-weight: 400;
+                font-size: 7.5vh;
                 span{
                     font-weight: 400;
                     color: ${theme.primary};
                 }
-                
             }
             .lineContainer{
-                display: grid;
-                grid-template-columns: 5% auto;
-                align-items: center;
                 h2{
-                    font-size: 6vh;
-                    font-weight: 400;
+                    font-size: 4rem;
+                    margin-bottom: 5rem;
                 }
                 div{
-                    display: grid;
-                    width: 100%;
-                    height: 2px;
-                    background-color: black;
+                    display: none;
                 }
             }
             
+            
+            
             .buttonContainer{
                 display: none;
-                    button{
-                        margin-right: 2rem;
-                    }
-                }       
+                button{
+                }
+            }       
         }
-        }
-
+    }
+    
     @media(min-width: 1025px){
         display: none;
     }
-`
-export default MobileLanding
+    `
+    export default MobileLanding
+    
