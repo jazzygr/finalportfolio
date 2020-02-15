@@ -33,14 +33,12 @@ const MobileAbout = () => {
             
             span{
                 display: block;
-                font-weight: 400;
                 font-size: 2.5rem;
                 color: ${theme.primary};
             }
             
         }
         p{
-            font-size: 1rem;
             padding: 1rem;
             margin: 0 2rem 0.5rem 2rem;
             color: ${theme.gray};
@@ -68,7 +66,6 @@ const MobileAbout = () => {
             height: 2px;
         }
         h2{
-            font-weight: 600;
             font-size:  3rem;
             padding: 0 1rem;
         }

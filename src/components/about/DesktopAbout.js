@@ -64,13 +64,11 @@ const DesktopAbout = () => {
             margin-left: 5%;
             
             span{
-                font-weight: 400;
                 font-size: 2rem;
                 color: ${theme.primary};
             }
         }
         p{
-            line-height: 1.5rem;
             padding: 1rem 2rem 1rem 0;
             color: ${theme.gray};
         }

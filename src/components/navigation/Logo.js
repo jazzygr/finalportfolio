@@ -4,7 +4,7 @@ import theme from '../styles/Global'
 
 const Logo = () => {
     return (
-        <MyLogo>
+        <MyLogo id="logo">
             <h4>
                 Jeff Graham
             </h4>

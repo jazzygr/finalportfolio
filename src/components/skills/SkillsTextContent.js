@@ -65,12 +65,8 @@ const SkillsTextContent = props => {
     display: grid;
     grid-template-rows: repeat(4, 25%);
 
-    @media(max-width:1240px) {
-        display: block;
-        }
-
       div{
-        display: grid;
+        display: block;
       }
     margin-right: 10%;
 

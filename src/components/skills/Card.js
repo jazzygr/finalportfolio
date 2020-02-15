@@ -110,7 +110,6 @@ const improvements = <div>
   }
   
   h5{
-    padding: 0.5rem;
     font-size: 1rem;
     font-weight: 400;
     border-bottom: 1px solid ${theme.accent};
@@ -121,9 +120,8 @@ const improvements = <div>
         }
   }
   p{
-    display: flex;
     text-align: center;
-    padding: .5rem;
+    padding: 1rem;
     font-size: 0.8rem;
     color: ${theme.gray};
     
@@ -136,16 +134,11 @@ const improvements = <div>
     @media(max-width:1024px){
         grid-template-columns: repeat(2, 1fr);
         }
-    
-
     li{
-      align-items: center;
       :hover{
         transition: transform, 0.3s ease-in-out;
         transform: scale(1.2);
       }
-      font-family: "montserrat";
-      font-size: 2.2vh;
       list-style: none;
       cursor: pointer;
       :last-child{

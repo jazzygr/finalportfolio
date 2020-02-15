@@ -23,7 +23,6 @@ const DesktopLanding = () => {
         .textContainer{
             display: grid;
             grid-template-rows: repeat(3, 1fr), auto;
-            height: 50%;
             h1:nth-child(2){
                 font-size: 5vh;
                 margin-left: 20%;
@@ -31,7 +30,7 @@ const DesktopLanding = () => {
                 color: ${theme.gray};
             }
             h2:nth-child(3){
-                font-size: 8vh;
+                font-size: 9vh;
                 margin-left: 30%;
                 font-weight: 400;
                 span{
@@ -45,7 +44,7 @@ const DesktopLanding = () => {
                 grid-template-columns: 10% auto;
                 align-items: center;
                 h2{
-                    font-size: 5rem;
+                    font-size: 12vh;
                 }
                 div{
                     display: grid;
