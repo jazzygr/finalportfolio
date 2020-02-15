@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 
 const Navbar = () => {
+    if (typeof window !== `undefined`){
     let prevScrollPos = window.pageYOffset;
     window.onscroll= function(){
         let currentScrollPos = window.pageYOffset;
@@ -14,6 +15,7 @@ const Navbar = () => {
         }
         prevScrollPos = currentScrollPos;
     }
+}
     return(
         <MyNavbar>
             <DesktopNavbar />
