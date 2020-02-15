@@ -49,7 +49,8 @@ border-bottom:1px solid rgba(150, 150, 150, 0.2);
         }
         @media(max-width: 1025px){
             li:last-child{
-                display: none;
+                display: block;
+
             }
         }
 `
