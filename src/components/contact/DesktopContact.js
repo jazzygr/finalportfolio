@@ -4,7 +4,7 @@ import theme from '../styles/Global'
 
 const DesktopContact = () => {
   return (
-    <StyledDesktopContact>
+    <div>
     <LineContainer>
     <div></div>
     <h3>Get in touch</h3>
@@ -44,25 +44,16 @@ const DesktopContact = () => {
     </form>
     </Container>
     
-    </StyledDesktopContact>
+    </div>
     )
   }
-  
-  const StyledDesktopContact = styled.div`
-  `
-  
+
   
   const Container = styled.div`
-  line-height: 1.6;
   padding: 1rem;
   max-width: 90%;
   margin: 0 auto;
   form{
-    padding: 1rem;
-    width: 90%;
-    margin: 0 auto;
-    
-    
     @media(min-width: 960px) {
       display: grid;
       gap: 20px;
@@ -70,7 +61,8 @@ const DesktopContact = () => {
     label{
       padding-bottom: .5rem;
     }
-    input{
+    input, textarea{
+      margin-top: 0.5rem;
     }
     .full{
       grid-column: 1 / 3;
@@ -88,7 +80,7 @@ const DesktopContact = () => {
       padding: 0;
       background: ${theme.secondary};
       :hover, :focus{
-        background:#92bde7;
+        background: #92bde7;
         color:#fff;
         outline: 0;
         transition: background-color 0.8s ease-out;

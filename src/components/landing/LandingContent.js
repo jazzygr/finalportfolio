@@ -8,14 +8,15 @@ import animateScrollTo from 'animated-scroll-to';
     query {
       lineDrawingMain: file(relativePath: { eq: "line-drawing-main.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }
       }
     }
     `)
-    function handleScroll1() {
+    
+    function handleScroll() {
       animateScrollTo(document.getElementById('aboutMe'));
   }
     return (
@@ -29,9 +30,8 @@ import animateScrollTo from 'animated-scroll-to';
                     <h1>My name's Jeff</h1>
                     <h2>I build <span>websites.</span></h2>
                     <div className="buttonContainer">
-                        <button onClick={handleScroll1}>About Me</button>
+                        <button onClick={handleScroll}>About Me</button>
                         <button>View CV</button>
-
                     </div>
                 </div>
 

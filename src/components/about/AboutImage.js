@@ -7,7 +7,7 @@ import Img from "gatsby-image"
     query {
       aboutMeMain: file(relativePath: { eq: "aboutMeMain.png" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
+          fluid(maxWidth: 600) {
             ...GatsbyImageSharpFluid
           }
         }

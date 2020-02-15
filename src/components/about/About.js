@@ -13,7 +13,8 @@ const About = () => {
 )}
 
 const LandingContainer = styled.div`
-    margin-top: 10rem;
+    /* navbar position fix */
+    padding-top: 10vh;
 `
 
 
