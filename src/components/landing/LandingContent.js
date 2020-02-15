@@ -16,12 +16,13 @@ import animateScrollTo from 'animated-scroll-to';
     }
     `)
     
-    function handleScroll() {
+    function handleScroll(t=()=>{}) {
       animateScrollTo(document.getElementById('aboutMe'));
   }
     return (
 
             <div className="container">
+
                 <div className="textContainer">
                     <div className="lineContainer">
                         <div></div>

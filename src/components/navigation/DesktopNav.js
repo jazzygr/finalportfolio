@@ -15,13 +15,14 @@ import theme from "../styles/Global"
 
 const MyDesktopNavbar = styled.div`
 display: grid;
-height: 10vh;
+min-height: 10vh;
 width: 100%;
 position: fixed;
 
 z-index: 1000;
 background: ${theme.white};
 border-bottom:1px solid rgba(150, 150, 150, 0.2);
+box-shadow: 0 3px 3px -2px rgba(0,0,0,.2);
 @media(min-width: 1026px){
     grid-template-columns: 15% 85%;
             }

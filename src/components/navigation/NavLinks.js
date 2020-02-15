@@ -70,8 +70,9 @@ const NavLinks = () => {
             outline: none;
         }
         :hover{
-            transition: transform 5s, 0.3s ease-in-out;
-            transform: scale(1.1);
+            transition: transform 2s, 0.3s ease-in-out;
+            transform: scale(1.4);
+
         }
     }
     `

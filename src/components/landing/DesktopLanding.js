@@ -13,6 +13,12 @@ const DesktopLanding = () => {
     }
     
     const StyledDesktopLanding= styled.div`
+    .imageContainer{
+        :nth-child(2){
+            transform: scaleX(-1);
+            margin-right: -5px;
+        }
+    }
     .container{
         display: grid;
         grid-template-columns: 60% 40%;
