@@ -39,9 +39,11 @@ border-bottom:1px solid rgba(150, 150, 150, 0.2);
             align-items: center;
             justify-items: center;
             height: 100%;
-            font-size: 2vh;
+            font-size: 0.8rem;
+            @media(max-width: 380px){
+                font-size: 0.6rem;
+            }
             button{
-                height: 5vh;
                 background: none;
             }
         }
