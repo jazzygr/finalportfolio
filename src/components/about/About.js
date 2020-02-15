@@ -13,7 +13,7 @@ const About = () => {
 )}
 
 const LandingContainer = styled.div`
-    padding-top: 12vh;
+    margin-top: 10rem;
 `
 
 

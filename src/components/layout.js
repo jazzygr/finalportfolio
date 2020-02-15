@@ -23,7 +23,6 @@ const Footer = styled.footer`
   width: 80%;
   text-align: center;
   margin: 1rem auto;
-  font-family: 'montserrat';
 `
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
