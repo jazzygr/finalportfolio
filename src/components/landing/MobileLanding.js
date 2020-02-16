@@ -13,8 +13,12 @@ const MobileLanding = () => {
     
     const StyledMobileLanding= styled.div`
     height: 100vh;
+    margin-bottom: 13rem;
     .imageContainer{
-        margin: auto 0;
+        height: 50vh;
+        @media(min-width: 860px){
+            height: 80vh;
+        }
         :nth-child(2){
             margin-bottom: 10%;
             transform: scaleX(-1);
@@ -48,7 +52,7 @@ align-items: center;
                     top: 0;
                     right: 5%;
                     z-index: 1;
-                    opacity: 0.3;
+                    opacity: 0.2;
                 }
             }       
         }
@@ -82,8 +86,16 @@ align-items: center;
             
             
             .buttonContainer{
-                display: none;
+                    margin-top: 4rem;
+                    
                 button{
+                    display: block;
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                    :hover{
+                        background: ${theme.secondary};
+                    }
                 }
             }       
         }

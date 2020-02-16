@@ -7,12 +7,12 @@ const DesktopContact = () => {
     <div>
     <LineContainer>
     <div></div>
-    <h3>Get in touch</h3>
+    <h3>Get In Touch</h3>
     <div></div>
     </LineContainer>
     <Container>
     <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="portfolio">
-      <input type="hidden" name="bot-field" />
+    <input type="hidden" name="bot-field" />
     <p>
     <label htmlFor="name">Name:
     <input type="text" name="name"></input>
@@ -39,7 +39,7 @@ const DesktopContact = () => {
     </label>
     </p>
     <p className="full">
-      <input type="submit" className="submitButton"/>
+    <input type="submit" className="submitButton"/>
     </p>
     </form>
     </Container>
@@ -47,7 +47,7 @@ const DesktopContact = () => {
     </div>
     )
   }
-
+  
   
   const Container = styled.div`
   padding: 1rem;
@@ -70,21 +70,20 @@ const DesktopContact = () => {
     textarea, input{
       width: 100%;
       padding: 1rem;
-      border: 1px solid ${theme.secondary};
+      border: 1px solid ${theme.black};
     }
     .submitButton{
-      border: 2px solid ${theme.secondary};
-      height: 2.5rem;
-      border-radius: 5px;
       text-transform: uppercase;
-      padding: 0;
-      background: ${theme.secondary};
-      :hover, :focus{
-        background: #92bde7;
-        color:#fff;
-        outline: 0;
-        transition: background-color 0.8s ease-out;
+      background: none;
+      :hover{
         cursor: pointer;
+        outline: none;
+        background-color: ${theme.secondary};
+        transition: background-color 0.5s ease-out, color 0.2s ease-out;
+      }
+      :focus{
+        outline: none;
+        transition: background-color 2s ease-out;
       }
     }
   }
@@ -98,11 +97,17 @@ const DesktopContact = () => {
   
   div {
     background-color: black;
-    height: 2px;
+    height: 4px;
   }
   h3{
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+    @media(max-width:769px){
+      font-size: 2rem;
+    }
+    @media(max-width:500px){
+      font-size: 1.3rem;
+    }
   }
   
   `

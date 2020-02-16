@@ -31,8 +31,8 @@ import animateScrollTo from 'animated-scroll-to';
                     <h1>My name's Jeff</h1>
                     <h2>I build <span>websites.</span></h2>
                     <div className="buttonContainer">
-                        <button onClick={handleScroll}>About Me</button>
-                        <button>View CV</button>
+                        <button onClick={handleScroll}>ABOUT ME</button>
+                        <button>DOWNLOAD CV</button>
                     </div>
                 </div>
 

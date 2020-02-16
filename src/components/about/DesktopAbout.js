@@ -41,7 +41,7 @@ const DesktopAbout = () => {
             margin-right: 1rem;
         }
         div{
-            height: 2px;
+            height: 4px;
             background-color: ${theme.black};
         }
     }
@@ -71,6 +71,13 @@ const DesktopAbout = () => {
         p{
             padding: 1rem 2rem 1rem 0;
             color: ${theme.gray};
+        }
+        button{
+            width: 40%;
+            text-transform: uppercase;
+            :hover{
+                background-color: ${theme.secondary};
+            }
         }
     }
     `

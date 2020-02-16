@@ -75,6 +75,7 @@ const SkillsTextContent = props => {
         font-size: 1.2rem;
       }
       p{
+        padding-top: 0.5rem;
         margin-left: 5%;
         font-size: 0.9rem;
         font-weight: 400;
@@ -92,7 +93,7 @@ const SkillsTextContent = props => {
     }
     div {
       background-color: ${theme.black};
-      height: 2px;
+      height: 4px;
       margin-left: -1px;
     }
     
