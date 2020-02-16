@@ -153,6 +153,7 @@ const improvements = <div>
           padding: 0.4rem;
           /* fix for transition, scaling caused pixel error, margin corrects this */
           margin-right: 0.1rem;
+          margin-bottom: 0.1rem;
           text-transform: uppercase;
       }
         @media(max-width:1024px){

@@ -7,35 +7,38 @@ const OtherSkillsTitle = () => {
     return (
             <StyledOtherSkills>
                 <div className="lineContainer">
-                    <h2>Other </h2>
                     <div></div>
-                    <span>Skills</span>
+                    <h2>Other <span>Skills</span></h2>
+                    <div></div>
+                    
                 </div>
             </StyledOtherSkills>
         )
     }
     const StyledOtherSkills= styled.div`
     margin-top: 10vh;
+    width: 100%;
     .lineContainer{
         @media(max-width:550px){
             font-size: 1.3rem;
         }
-        margin-left: 50%;
         display: grid;
-        grid-template-columns: auto 1fr;
+        grid-template-columns: 1fr auto 1fr;
         align-items: center;
         font-size: 2rem;
         h2{
-            margin-right: 1rem;
+            margin: 2rem;
         }
 
         div{
             height: 4px;
+            width: 100%;
             background-color: ${theme.black};
         }
         span{
                 color: ${theme.primary};
-                margin-left: 2rem;
+                display: block;
+                text-align: center;
             }
     }
     `
