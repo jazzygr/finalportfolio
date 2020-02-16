@@ -21,7 +21,9 @@ const MainCard = props => {
     <>
       <CardImage>
       <Img fluid={data.preview.childImageSharp.fluid} />
-      <BannerText>Coming Soon!</BannerText>
+      <BannerText>
+        <p>Coming Soon!</p>
+        </BannerText>
     </CardImage>
     </>
   )
