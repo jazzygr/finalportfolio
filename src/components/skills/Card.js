@@ -132,7 +132,6 @@ const improvements = <div>
     padding: 1rem;
     font-size: 1rem;
     color: ${theme.gray};
-    
   }
   ul{
     display: grid;
