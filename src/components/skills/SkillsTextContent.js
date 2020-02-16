@@ -10,7 +10,7 @@ const SkillsTextContent = props => {
               <div></div>
               <h2>Portfolio</h2>
               </LineContainer>
-             <h3>and <span>Skills</span></h3>
+              <h3>and <span>Skills</span></h3>
           </Title>
           <TextContainer>
             <div>
@@ -81,6 +81,7 @@ const SkillsTextContent = props => {
         font-weight: 400;
         color: ${theme.gray};
         line-height: 1.3rem;
+
       }
     `
     
