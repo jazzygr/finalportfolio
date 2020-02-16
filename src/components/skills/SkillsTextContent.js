@@ -14,7 +14,7 @@ const SkillsTextContent = props => {
           </Title>
           <TextContainer>
             <div>
-            <h5>Project overview</h5>
+            <h5>Project Overview</h5>
               <div id="overview"></div>
               </div>
               <div>

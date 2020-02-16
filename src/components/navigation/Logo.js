@@ -18,7 +18,7 @@ align-items:center;
 height: 10vh;
     h4 {
         text-transform: uppercase;
-        font-size: 3vh;
+        font-size: 2rem;
         font-weight: 400;
         text-align: center;
         color: ${theme.primary};
