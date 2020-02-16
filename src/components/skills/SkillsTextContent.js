@@ -92,7 +92,7 @@ const SkillsTextContent = props => {
     }
     div {
       background-color: ${theme.black};
-      height: 2px;
+      height: 4px;
       margin-left: -1px;
     }
     

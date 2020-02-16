@@ -14,7 +14,7 @@ const Skills = () => {
 }
 
 const StyledSkills= styled.div`
-    padding-top: 12vh;
+    padding-top: 1rem;
 `
 
 export default Skills

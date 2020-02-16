@@ -41,7 +41,7 @@ const DesktopAbout = () => {
             margin-right: 1rem;
         }
         div{
-            height: 2px;
+            height: 4px;
             background-color: ${theme.black};
         }
     }

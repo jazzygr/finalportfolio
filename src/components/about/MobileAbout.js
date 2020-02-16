@@ -16,6 +16,7 @@ const MobileAbout = () => {
     }
     
     const StyledMobileAbout= styled.div`
+    margin-top: 10rem;
     @media(min-width:1025px){
             display: none;
         }

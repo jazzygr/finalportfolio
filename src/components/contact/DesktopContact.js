@@ -98,11 +98,11 @@ const DesktopContact = () => {
   
   div {
     background-color: black;
-    height: 2px;
+    height: 4px;
   }
   h3{
-    font-weight: 400;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
   }
   
   `

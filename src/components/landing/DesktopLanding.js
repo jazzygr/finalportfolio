@@ -55,7 +55,7 @@ const DesktopLanding = () => {
                 div{
                     display: grid;
                     width: 100%;
-                    height: 2px;
+                    height: 4px;
                     background-color: black;
                 }
             }
