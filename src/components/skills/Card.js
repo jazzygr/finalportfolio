@@ -83,6 +83,14 @@ const improvements = <div>
   `
   
   const StyledCard = styled.div`
+  @media(max-width: 1024px){
+    width: 50%;
+    margin: 0 auto;
+  }
+  @media(max-width: 768px){
+    width: 90%;
+    margin: 0 auto;
+  }
   display: grid;
   min-height: 230px;
   grid-template-rows: 40% 10% 35% 15%;
@@ -122,7 +130,7 @@ const improvements = <div>
   p{
     text-align: center;
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: ${theme.gray};
     
   }
@@ -143,7 +151,10 @@ const improvements = <div>
       cursor: pointer;
       :last-child{
         button{
-        cursor: pointer;
+          padding: 0.4rem;
+          /* fix for transition, scaling caused pixel error, margin corrects this */
+          margin-right: 0.1rem;
+          text-transform: uppercase;
       }
         @media(max-width:1024px){
         display: none;

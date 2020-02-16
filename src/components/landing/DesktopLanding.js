@@ -36,7 +36,7 @@ const DesktopLanding = () => {
                 color: ${theme.gray};
             }
             h2:nth-child(3){
-                font-size: 9vh;
+                font-size: 3rem;
                 margin-left: 30%;
                 font-weight: 400;
                 span{
@@ -64,21 +64,11 @@ const DesktopLanding = () => {
                 margin-left: 10%;
                 margin-top: 8rem;
                 button{
-                    border: 2px solid ${theme.secondary};
+                    width: 35%;
                     margin-right: 1rem;
-                    height: 2.5rem;
-                    width: 10rem;
-                    border-radius: 5px;
-                    text-transform: uppercase;
-                    background: ${theme.secondary};
-                    :hover, :focus{
-                        background:#92bde7;
-                        color:#fff;
-                        outline: 0;
-                        transition: background-color 0.8s ease-out;
-                        cursor: pointer;
+                    :hover{
+                        background: ${theme.secondary};
                     }
-                    
                 }
             }       
         }

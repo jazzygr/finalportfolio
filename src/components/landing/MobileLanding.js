@@ -86,8 +86,16 @@ align-items: center;
             
             
             .buttonContainer{
-                display: none;
+                    margin-top: 4rem;
+                    
                 button{
+                    display: block;
+                    width: 70%;
+                    margin: 0 auto;
+                    margin-top: 1rem;
+                    :hover{
+                        background: ${theme.secondary};
+                    }
                 }
             }       
         }

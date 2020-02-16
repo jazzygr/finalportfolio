@@ -14,14 +14,14 @@ const Sidebar = styled.div`
 
 .fixed-misc {
     position: fixed;
-    top: 35%;
+    top: 40%;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-transform: uppercase;
     font-size: 0.7rem;
     margin: 0.1rem;
     letter-spacing: 0.2rem;
-    color: ${theme.gray};
+    color: ${theme.primary};
     z-index: 8;
     @media (max-width: 1024px) {
         display: none;

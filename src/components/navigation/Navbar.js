@@ -4,6 +4,7 @@ import styled from "styled-components"
 
 
 const Navbar = () => {
+    //Navbar retract feature needed to be wrapped in a typeof fix as window is a global variable, netlify calling it broke the initial build. Or something like that.
     if (typeof window !== `undefined`){
     let prevScrollPos = window.pageYOffset;
     window.onscroll= function(){

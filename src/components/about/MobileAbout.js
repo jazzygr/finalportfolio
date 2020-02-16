@@ -46,11 +46,15 @@ const MobileAbout = () => {
         }
         button{
             display: block;
-            width: 80%;
+            width: 90%;
+            text-transform: uppercase;
             margin: 0 auto;
+            :hover{
+                background-color: ${theme.secondary};
+            }
         }
     }
-   
+    
     .lineContainer{
         display: grid;
         grid-template-columns: 1fr auto 1fr;

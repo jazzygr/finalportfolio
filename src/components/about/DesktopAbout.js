@@ -72,6 +72,13 @@ const DesktopAbout = () => {
             padding: 1rem 2rem 1rem 0;
             color: ${theme.gray};
         }
+        button{
+            width: 40%;
+            text-transform: uppercase;
+            :hover{
+                background-color: ${theme.secondary};
+            }
+        }
     }
     `
     
