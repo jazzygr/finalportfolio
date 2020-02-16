@@ -1,10 +1,10 @@
 import React from 'react';
 import Card from "./Card"
 import MainCard from "./MainCard"
-import img1 from "../../images/portfolio.png"
-import img2 from "../../images/colourgame.png"
-import img3 from "../../images/piano.png"
-import img4 from "../../images/weatherapp.png"
+import img1 from "../../images/portfolio.jpg"
+import img2 from "../../images/colourgame.jpg"
+import img3 from "../../images/piano.jpg"
+import img4 from "../../images/weatherapp.jpg"
 
 
 const SkillsCardContent = () => {
