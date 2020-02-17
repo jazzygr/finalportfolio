@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import {motion} from 'framer-motion' 
 
 const AboutTitle = () => {
     
@@ -7,7 +8,13 @@ const AboutTitle = () => {
                 <div className="lineContainer">
                     <MobileAboutLine></MobileAboutLine>
                     <h2>Who Am I?</h2>
-                    <div></div>
+                    <motion.div
+                    initial={{x: '40vw'}}
+                    animate={{
+                      x: 0
+                    }}
+                    transition={{duration: 0.7}}
+                    ></motion.div>
                 </div>
         )
     }

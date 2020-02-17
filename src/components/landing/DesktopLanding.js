@@ -66,18 +66,29 @@ const DesktopLanding = () => {
                 button{
                     width: 35%;
                     margin-right: 1rem;
+                    text-transform: uppercase;
+                    background: ${theme.button};
+                    color: ${theme.buttonText};
                     :hover{
-                        background: ${theme.secondary};
+                        border: 1px solid ${theme.buttonBorder};
+                        background-color: ${theme.buttonHover};
+                        cursor: pointer;
+                        outline: none;
+                        transition: background-color 0.5s ease-out, color 0.2s ease-out;
+
+                    :focus{
+                        outline: none;
+                        transition: background-color 2s ease-out;
                     }
                 }
-            }       
-        }
+            }
+        }       
     }
-    
-    @media(max-width:1024px){
-        display: none;
-    }
-    `
-    
-    export default DesktopLanding
-    
+}
+
+@media(max-width:1024px){
+    display: none;
+}
+`
+
+export default DesktopLanding

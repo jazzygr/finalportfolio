@@ -49,8 +49,11 @@ const MobileAbout = () => {
             width: 90%;
             text-transform: uppercase;
             margin: 0 auto;
+            background: ${theme.button};
+            color: ${theme.buttonText};
+            border: 1px solid ${theme.buttonBorder};
             :hover{
-                background-color: ${theme.secondary};
+                background-color: ${theme.buttonHover};
             }
         }
     }

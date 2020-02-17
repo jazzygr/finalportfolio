@@ -74,11 +74,13 @@ const DesktopContact = () => {
     }
     .submitButton{
       text-transform: uppercase;
-      background: none;
+      background: ${theme.button};
+      color: ${theme.buttonText};
       :hover{
+        border: 1px solid ${theme.buttonBorder};
+        background-color: ${theme.buttonHover};
         cursor: pointer;
         outline: none;
-        background-color: ${theme.secondary};
         transition: background-color 0.5s ease-out, color 0.2s ease-out;
       }
       :focus{

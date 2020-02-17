@@ -2,6 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import animateScrollTo from 'animated-scroll-to';
+import {motion} from 'framer-motion' 
 
  const LandingContent = () => {
     const data = useStaticQuery(graphql`
@@ -16,7 +17,7 @@ import animateScrollTo from 'animated-scroll-to';
     }
     `)
     
-    function handleScroll(t=()=>{}) {
+    function handleScroll() {
       animateScrollTo(document.getElementById('aboutMe'));
   }
     return (
@@ -25,7 +26,13 @@ import animateScrollTo from 'animated-scroll-to';
 
                 <div className="textContainer">
                     <div className="lineContainer">
-                        <div></div>
+                        <motion.div 
+                        initial={{x: '-100px'}}
+                        animate={{
+                          x: 0
+}}
+                        transition={{duration: 0.7}}
+                        ></motion.div>
                         <h2>Hey</h2>
                     </div>
                     <h1>My name's Jeff</h1>
