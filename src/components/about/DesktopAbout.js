@@ -23,7 +23,7 @@ const DesktopAbout = () => {
     const Title= styled.div`
     .imageContainer{
         :first-child{
-            transform: scaleX(-1);
+            transform: scaleX(-1);    
         }
     }
     @media(max-width:1024px){
@@ -75,8 +75,12 @@ const DesktopAbout = () => {
         button{
             width: 40%;
             text-transform: uppercase;
+            background: ${theme.button};
+            color: ${theme.buttonText};
+            border: 1px solid ${theme.buttonBorder};
+            
             :hover{
-                background-color: ${theme.secondary};
+                background-color: ${theme.buttonHover};
             }
         }
     }

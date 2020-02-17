@@ -30,12 +30,12 @@ const MobileLanding = () => {
         display: grid;
         grid-template-columns: 1fr 1fr;
         .imageContainer{
-
-:nth-child(2){
-display: grid;
-align-items: center;
-}
-}
+            
+            :nth-child(2){
+                display: grid;
+                align-items: center;
+            }
+        }
         @media(max-width: 860px){
             .textContainer{
                 position: relative;
@@ -44,7 +44,7 @@ align-items: center;
             display: block;
             position: relative;
             .imageContainer{
-
+                
                 :nth-child(2){
                     position: absolute;
                     width: 100%;
@@ -86,15 +86,26 @@ align-items: center;
             
             
             .buttonContainer{
-                    margin-top: 4rem;
-                    
+                margin-top: 4rem;
+                
                 button{
                     display: block;
                     width: 70%;
                     margin: 0 auto;
                     margin-top: 1rem;
+                    text-transform: uppercase;
+                    background: ${theme.button};
+                    color: ${theme.buttonText};
                     :hover{
-                        background: ${theme.secondary};
+                        border: 1px solid ${theme.buttonBorder};
+                        background-color: ${theme.buttonHover};
+                        cursor: pointer;
+                        outline: none;
+                        transition: background-color 0.5s ease-out, color 0.2s ease-out;
+                    }
+                    :focus{
+                        outline: none;
+                        transition: background-color 2s ease-out;
                     }
                 }
             }       

@@ -53,7 +53,7 @@ const NavLinks = () => {
     
     const MyNavLinks= styled.nav`
     #mobileLogo{
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: ${theme.primary};
     }
     @media(min-width: 1026px){
@@ -62,6 +62,9 @@ const NavLinks = () => {
         }
     }
     button{
+        @media(max-width: 500px){
+            font-size: 0.3rem;
+        }
         cursor: pointer;
         border: none;
         font-weight: 400;
