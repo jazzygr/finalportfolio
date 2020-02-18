@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     <>
         
         <main>{children}</main>
-        <Footer>
+        <Footer id="footer">
           Built by Jeff Graham with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>  © {new Date().getFullYear()}

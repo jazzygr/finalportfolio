@@ -98,7 +98,7 @@ const MobileLanding = () => {
                     color: ${theme.buttonText};
                     :hover{
                         border: 1px solid ${theme.buttonBorder};
-                        background-color: ${theme.buttonHover};
+                        opacity: 0.8;
                         cursor: pointer;
                         outline: none;
                         transition: background-color 0.5s ease-out, color 0.2s ease-out;

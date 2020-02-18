@@ -6,20 +6,19 @@ import OtherSkillsTitle from '../otherSkills/OtherSkillsTitle'
 
 
 const OtherSkills = () => {
-
     return (
         <>
             <OtherSkillsTitle />
             <StyledOtherSkills>
                 <div className="iconContainer" >
-                    <div><IoLogoHtml5 size="15vh" color="#EF6026"/></div>
-                    <div><IoLogoCss3 size="15vh" color="#0170BA"/></div>
-                    <div><IoLogoJavascript size="15vh" color="#F5DE18"/></div>
-                    <div><FaReact size="15vh" color="#61DBFB"/></div>
-                    <div><FaGitSquare size="15vh" color="#CA3839"/></div>
-                    <div><FaNpm size="15vh" color="#CA3839"/></div>
-                    <div><FaSass size="15vh" color="#E55EA8"/></div>
-                    <div><FaAdobe size="15vh" color="#FF0100"/></div>
+                    <div className="card"><IoLogoHtml5 size="15vh" color="#EF6026"/></div>
+                    <div className="card"><IoLogoCss3 size="15vh" color="#0170BA"/></div>
+                    <div className="card"><IoLogoJavascript size="15vh" color="#F5DE18"/></div>
+                    <div className="card"><FaReact size="15vh" color="#61DBFB"/></div>
+                    <div className="card"><FaGitSquare size="15vh" color="#CA3839"/></div>
+                    <div className="card"><FaNpm size="15vh" color="#CA3839"/></div>
+                    <div className="card"><FaSass size="15vh" color="#E55EA8"/></div>
+                    <div className="card"><FaAdobe size="15vh" color="#FF0100"/></div>
                 </div>
             </StyledOtherSkills>
         </>
@@ -29,7 +28,7 @@ const OtherSkills = () => {
 const StyledOtherSkills= styled.div`
     padding-top: 1rem;
     .iconContainer{
-        width: 80%;
+        max-width: 80%;
         margin: 0 auto;
         text-align: center;
         display: grid;

@@ -63,7 +63,7 @@ const NavLinks = () => {
     }
     button{
         @media(max-width: 500px){
-            font-size: 0.3rem;
+            font-size: 0.5rem;
         }
         cursor: pointer;
         border: none;
