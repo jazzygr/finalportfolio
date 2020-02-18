@@ -80,7 +80,7 @@ const DesktopAbout = () => {
             border: 1px solid ${theme.buttonBorder};
             
             :hover{
-                background-color: ${theme.buttonHover};
+                opacity: 0.8;
             }
         }
     }

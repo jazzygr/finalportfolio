@@ -41,7 +41,7 @@ display: grid;
 position: relative;
 overflow: hidden;
 text-align: center;
-font-size: 3vh;
+font-size: 1rem;
 cursor: pointer;
 box-shadow: 0px 3px 6px rgb(20,20,20, 0.16); 
 border: 1px solid ${theme.accent};

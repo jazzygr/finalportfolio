@@ -19,6 +19,7 @@ min-height: 10vh;
 width: 100%;
 position: fixed;
 
+
 z-index: 1000;
 background: ${theme.white};
 border-bottom:1px solid rgba(150, 150, 150, 0.2);
