@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import DesktopNavbar from "./DesktopNav"
 import styled from "styled-components"
 import AOS from 'aos'
@@ -6,7 +6,7 @@ import 'aos/dist/aos.css';
 
 
 const Navbar = () => {
-    AOS.init();
+    useEffect(AOS.init);
     //Navbar retract feature needed to be wrapped in a typeof fix as window is a global variable, netlify calling it broke the initial build. Or something like that.
     if (typeof window !== `undefined`){
     let prevScrollPos = window.pageYOffset;
@@ -21,7 +21,7 @@ const Navbar = () => {
     }
 }
     return(
-        <MyNavbar >
+        <MyNavbar>
             <DesktopNavbar />
       </MyNavbar>
       )}

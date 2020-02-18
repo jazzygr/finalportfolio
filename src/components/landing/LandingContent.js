@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import animateScrollTo from 'animated-scroll-to';
@@ -22,7 +22,7 @@ const LandingContent = () => {
   function handleScroll() {
     animateScrollTo(document.getElementById('aboutMe'));
   }
-  AOS.init();
+  useEffect(AOS.init);
   return (
     
     <div className="container">
