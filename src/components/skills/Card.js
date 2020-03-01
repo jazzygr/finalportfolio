@@ -1,4 +1,6 @@
-import React from "react"
+import React, {useEffect} from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import ReactDom from 'react-dom'
 import styled from 'styled-components'
 import theme from '../styles/Global'
@@ -7,27 +9,42 @@ import theme from '../styles/Global'
 
 
 const Card = props => {
+  useEffect(AOS.init);  
   function handleClick() {
+    
   const overview =
-                  <p>{props.overview}</p>
+                  <p
+                  data-aos='fade-in'
+                  data-aos-duration="700"
+                  >{props.overview}</p>
 
   ReactDom.render(overview, document.getElementById('overview'));
 
-  const problems = <div>
-                  <p>{props.problems}</p>
-                  </div>
+  const problems = 
+                  <p
+                  data-aos='fade-in'
+                  data-aos-duration="700"
+                  >{props.problems}</p>
+
 
   ReactDom.render(problems, document.getElementById('problems'));
 
-const solutions = <div>
-                  <p>{props.solutions}</p>
-                  </div>
+const solutions = 
+                  <p
+                  data-aos='fade-in'
+                  data-aos-duration="700"
+                  >{props.solutions}</p>
+
 
   ReactDom.render(solutions, document.getElementById('solutions'));
 
-const improvements = <div>
-                  <p>{props.improvements}</p>
-                  </div>
+const improvements = 
+                  <p
+                  data-aos='fade-in'
+                  data-aos-duration="700"
+                  data-aos-offset="0"
+                  >{props.improvements}</p>
+
 
   ReactDom.render(improvements, document.getElementById('improvements'));
 
