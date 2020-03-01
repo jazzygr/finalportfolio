@@ -1,16 +1,23 @@
-import React from 'react'
+import React, {useEffect} from 'react';
 import styled from "styled-components"
 import {IoLogoHtml5, IoLogoCss3, IoLogoJavascript } from 'react-icons/io'
 import {FaReact, FaGitSquare, FaNpm, FaSass, FaAdobe } from 'react-icons/fa'
 import OtherSkillsTitle from '../otherSkills/OtherSkillsTitle'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 
 const OtherSkills = () => {
+    useEffect(AOS.init);
     return (
         <>
             <OtherSkillsTitle />
             <StyledOtherSkills>
-                <div className="iconContainer" >
+                <div
+                data-aos='fade-up'
+                data-aos-offset="100"
+                data-aos-duration="700"
+                className="iconContainer" >
                     <div className="card"><IoLogoHtml5 size="15vh" color="#EF6026"/></div>
                     <div className="card"><IoLogoCss3 size="15vh" color="#0170BA"/></div>
                     <div className="card"><IoLogoJavascript size="15vh" color="#F5DE18"/></div>

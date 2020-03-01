@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
 import theme from '../styles/Global'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const OtherSkillsTitle = () => {
-    
+    useEffect(AOS.init);
     return (
             <StyledOtherSkills>
                 <div className="lineContainer">
-                    <div></div>
-                    <h2>Other <span>Skills</span></h2>
-                    <div></div>
+                    <div
+                    data-aos='slide-right'
+                    data-aos-offset="100"
+                    data-aos-duration="700"
+                    ></div>
+                    <h2
+                    data-aos='fade-in'
+                    data-aos-offset="100"
+                    data-aos-duration="800"
+                    >Other <span>Skills</span></h2>
+                    <div
+                    data-aos='slide-left'
+                    data-aos-offset="100"
+                    data-aos-duration="700"
+                    ></div>
                     
                 </div>
             </StyledOtherSkills>

@@ -15,7 +15,7 @@ const AboutTitle = () => {
                     ></MobileAboutLine>
                     <h2
                     data-aos='fade-in'
-                    data-aos-offset="70"
+                    data-aos-offset="120"
                     data-aos-duration="1200"
                     >Who Am I?</h2>
                     <div 
