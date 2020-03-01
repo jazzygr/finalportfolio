@@ -1,20 +1,28 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from 'styled-components';
-import {motion} from 'framer-motion' 
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const AboutTitle = () => {
-    
+  useEffect(AOS.init);  
+
     return (
                 <div className="lineContainer">
-                    <MobileAboutLine></MobileAboutLine>
-                    <h2>Who Am I?</h2>
-                    <motion.div
-                    initial={{x: '40vw'}}
-                    animate={{
-                      x: 0
-                    }}
-                    transition={{duration: 0.7}}
-                    ></motion.div>
+                    <MobileAboutLine
+                    data-aos='slide-right'
+                    data-aos-offset="100"
+                    data-aos-duration="700"
+                    ></MobileAboutLine>
+                    <h2
+                    data-aos='fade-in'
+                    data-aos-offset="70"
+                    data-aos-duration="1200"
+                    >Who Am I?</h2>
+                    <div 
+                      data-aos='slide-left'
+                      data-aos-offset="100"
+                      data-aos-duration="1000"
+                      ></div>
                 </div>
         )
     }

@@ -1,16 +1,34 @@
-import React from 'react';
+import React, {useEffect} from 'react';
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 import styled from "styled-components"
 import theme from '../styles/Global'
 
 const SkillsTextContent = props => {
+  useEffect(AOS.init);  
     return(
         <Container>
           <Title>
               <LineContainer>
-              <div></div>
-              <h2>Portfolio</h2>
+              <div
+              data-aos='slide-right'
+              data-aos-offset="100"
+              data-aos-duration="700"
+              data-aos-easing="ease-in-out"
+              ></div>
+              <h2
+              data-aos='fade-in'
+              data-aos-offset="130"
+              data-aos-duration="1200"
+              data-aos-easing="ease-in-out"
+              >Portfolio</h2>
               </LineContainer>
-              <h3>and <span>Skills</span></h3>
+              <h3
+              data-aos='fade-left'
+              data-aos-offset="100"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              >and <span>Skills</span></h3>
           </Title>
           <TextContainer>
             <div>
