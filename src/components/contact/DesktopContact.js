@@ -1,16 +1,35 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components"
 import theme from '../styles/Global'
+import AOS from 'aos'
+import 'aos/dist/aos.css';
 
 const DesktopContact = () => {
+  useEffect(AOS.init);
   return (
     <div>
     <LineContainer>
-    <div></div>
-    <h3>Get In Touch</h3>
-    <div></div>
+    <div
+    data-aos='slide-right'
+    data-aos-offset="100"
+    data-aos-duration="700"
+    ></div>
+    <h3
+    data-aos='fade-in'
+    data-aos-offset="100"
+    data-aos-duration="800"
+    >Get In Touch</h3>
+    <div
+    data-aos='slide-left'
+    data-aos-offset="100"
+    data-aos-duration="700"
+    ></div>
     </LineContainer>
-    <Container>
+    <Container
+    data-aos='fade-in'
+    data-aos-offset="150"
+    data-aos-duration="800"
+    >
     <form method="post" netlify-honeypot="bot-field" data-netlify="true" name="portfolio">
     <input type="hidden" name="bot-field" />
     <p>

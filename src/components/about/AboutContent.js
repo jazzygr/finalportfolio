@@ -17,7 +17,7 @@ const AboutContent = () => {
                >Web Designer and <span>Developer</span></h3>
                <h4
                data-aos='fade-in'
-               data-aos-offset="130"
+               data-aos-offset="150"
                data-aos-duration="700"
                data-aos-easing="ease-in-out"
                >Hi! My name's Jeff, and I'm a web designer and developer based in Belfast.</h4>
